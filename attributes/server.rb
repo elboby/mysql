@@ -131,6 +131,9 @@ default['mysql']['tunable']['transaction-isolation'] = nil
 default['mysql']['tunable']['query_cache_limit']    = '1M'
 default['mysql']['tunable']['query_cache_size']     = '16M'
 
+default['mysql']['tunable']['query_log_output']     = 0
+default['mysql']['tunable']['query_general_log_file']    = "/var/log/mysql/mysql.log"
+
 default['mysql']['tunable']['long_query_time']      = 2
 default['mysql']['tunable']['expire_logs_days']     = 10
 default['mysql']['tunable']['max_binlog_size']      = '100M'
